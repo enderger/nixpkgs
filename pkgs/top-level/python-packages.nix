@@ -4673,6 +4673,8 @@ in {
 
   ncclient = callPackage ../development/python-modules/ncclient { };
 
+  nclib = callPackage ../development/python-modules/nclib { };
+
   ndg-httpsclient = callPackage ../development/python-modules/ndg-httpsclient { };
 
   ndjson = callPackage ../development/python-modules/ndjson { };
