@@ -17517,6 +17517,10 @@ in
     fftw = fftwFloat;
   };
 
+  sphinx = with python3Packages; toPythonApplication sphinx;
+
+  sphinx-serve = with python3Packages; toPythonApplication sphinx-serve;
+
   sphinxbase = callPackage ../development/libraries/sphinxbase { };
 
   sphinxsearch = callPackage ../servers/search/sphinxsearch { };
@@ -28954,6 +28958,7 @@ in
   osi = callPackage ../development/libraries/science/math/osi { };
 
   or-tools = callPackage ../development/libraries/science/math/or-tools {
+    python = python3;
     abseil-cpp = abseil-cpp.override { static = true; };
   };
 
