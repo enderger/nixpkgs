@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 echo "Creating branch $1"
-git branch "$1" private/pr-base
+git branch "$1" base
 git switch "$1"

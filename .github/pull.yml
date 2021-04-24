@@ -1,5 +1,5 @@
 version: "1"
 rules:
-  - base: private/pr-base
+  - base: base
     upstream: NixOS:master
     mergeMethod: hardreset
