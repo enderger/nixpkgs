@@ -28960,6 +28960,7 @@ in
   osi = callPackage ../development/libraries/science/math/osi { };
 
   or-tools = callPackage ../development/libraries/science/math/or-tools {
+    python = python3;
     abseil-cpp = abseil-cpp.override { static = true; };
   };
 
